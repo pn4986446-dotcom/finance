@@ -4,11 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Govind Finance Hub</title>
-        <link rel="icon" type="image/png" href="logo.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
-        <link rel="manifest" href="site.webmanifest">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
         <style>
             :root{
                 --bg:#0f1724; --card:#0b1220; --muted:#9aa7bf; --accent:#2dd4bf; --accent-2:#60a5fa; --glass: rgba(255,255,255,0.04);
@@ -29,7 +25,7 @@
 
             header.site-header{display:flex;justify-content:space-between;align-items:center;padding:18px;border-radius:var(--radius);background:linear-gradient(90deg,var(--card),rgba(255,255,255,0.02));box-shadow:0 8px 30px rgba(2,6,23,0.6)}
             .brand{display:flex;gap:12px;align-items:center}
-            .logo{width:56px;height:56px;border-radius:12px;background:transparent;display:flex;align-items:center;justify-content:center;font-weight:800;color:#022;box-shadow:0 8px 20px rgba(8,20,40,0.18)}
+            .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(90deg,var(--accent-2),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:800;color:#022;box-shadow:0 8px 20px rgba(8,20,40,0.18)}
             header h1{margin:0;font-size:18px}
             header p{margin:0;color:var(--muted);font-size:13px}
 
@@ -64,7 +60,10 @@
 
             .small{font-size:13px;color:var(--muted)}
 
-            footer.site-footer{text-align:center;color:var(--muted);padding:18px}
+            footer.site-footer{display:flex;flex-direction:column;align-items:flex-start;color:var(--muted);padding:18px 0}
+            footer.site-footer p{margin:0 0 5px 0}
+            footer.site-footer a{color:var(--accent-2);text-decoration:none;margin-top:4px}
+            footer.site-footer a:hover{text-decoration:underline}
 
             .ttt-board{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:270px;margin:20px auto;}
             .ttt-cell{width:85px;height:85px;background:rgba(255,255,255,0.05);border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:40px;font-weight:bold;color:var(--accent-2);border: 1px solid rgba(255,255,255,0.1);}
@@ -74,10 +73,7 @@
         <div class="container">
             <header class="site-header">
                 <div class="brand">
-                    <div class="logo" aria-label="Site logo">
-                        <img src="logo.png" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:block;background:transparent;">
-                    </div>
-
+                    <div class="logo">GF</div>
                     <div>
                         <h1>Govind Finance Hub</h1>
                         <p class="small">Practical tools to manage your money</p>
@@ -151,15 +147,20 @@
                    <div class="ttt-cell" data-index="0"></div><div class="ttt-cell" data-index="1"></div><div class="ttt-cell" data-index="2"></div>
                    <div class="ttt-cell" data-index="3"></div><div class="ttt-cell" data-index="4"></div><div class="ttt-cell" data-index="5"></div>
                    <div class="ttt-cell" data-index="6"></div><div class="ttt-cell" data-index="7"></div><div class="ttt-cell" data-index="8"></div>
-                </dmiv>
+                </div>
                 <div id="ttt-status" style="margin-top:15px; font-weight:bold; color:var(--accent);"></div>
                 <button id="reset-ttt" class="btn" style="margin-top:10px;">New Game</button>
             </section>
 
             <section id="contact" class="card">
                 <h2>Contact</h2>
-                <p class="small">Email: govindfinancehub@gmail.com</p>
-                <footer class="site-footer">© 2026 Govind Sharma — Govind Finance Hub</footer>
+                <footer class="site-footer">
+                    <p>© 2026 AI Tools Directory</p>
+                    <p>Created by Govind Sharma</p>
+                    <a href="mailto:govindfinancehub@gmail.com">Email: govindfinancehub@gmail.com</a>
+                    <a href="https://instagram.com/govindfimacehub_456" target="_blank">Instagram: @govindfimacehub_456</a>
+                    <a href="https://x.com/govindfinaace_4" target="_blank">X (Twitter): @govindfinaace_4</a>
+                </footer>
             </section>
         </div>
 
@@ -240,4 +241,3 @@
     </body>
 </html>
 
-Created by Govind 
